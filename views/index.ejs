@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/main.css">
+    <title>🛢️ UK Energy Generation Mix</title>
+</head>
+<body>
+    <div id="title">
+        <h1>Current Generation Mix</h1>
+        <h3>Data correct to <%= time %> UTC</h3>
+    </div>
+    <div id="container">
+        <!-- Display generation mix from data -->
+        <% for( let i = 0; i < genMix.length; i++ ) { %>
+            <div class="item">
+                <span class="material-symbols-outlined icon">
+                    bolt
+                </span>
+                <div class="text">
+                    <p class="percent"><%= genMix[i].perc %>%</p>
+                    <p class="name"><%= genMix[i].fuel %></p>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>
