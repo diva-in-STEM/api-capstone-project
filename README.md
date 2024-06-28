@@ -7,4 +7,4 @@ This is a simple project using an [ExpressJS](https://www.expressjs.com/) server
 After cloning/downloading the repo, open it in a terminal window.\
 Run `npm i` to install necessary dependencies.\
 Run `nodemon index.js` to start the server.\
-Navigate to <http://localhost:3000/> to view the website.\
+Navigate to <http://localhost:3000/> to view the website.
